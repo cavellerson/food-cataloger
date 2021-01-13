@@ -18,7 +18,7 @@ foods.post("/", (req, res) => {
 })
 
 foods.put("/:id", (req, res) => {
-    Foods.findByIdAndUpdate(
+    Food.findByIdAndUpdate(
       req.params.id,
       req.body,
       { new: true },

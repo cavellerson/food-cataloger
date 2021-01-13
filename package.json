@@ -1,0 +1,23 @@
+{
+  "name": "food-cataloger",
+  "version": "1.0.0",
+  "description": "Andretti Duvenhage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavellerson/food-cataloger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cavellerson/food-cataloger/issues"
+  },
+  "homepage": "https://github.com/cavellerson/food-cataloger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

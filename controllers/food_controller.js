@@ -10,7 +10,7 @@ food.get ("/", (req, res) => {
 })
 
 food.post("/", (req, res) => {
-    Food.creat(req.body, (err, creatFood) => {
+    Food.create(req.body, (err, createFood) => {
         Food.find({}, (err, foundFoods) => {
             res.json(foundFoods)
         })

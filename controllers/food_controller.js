@@ -4,8 +4,8 @@ const foods = express.Router()
 const Food = require("../models/food.js")
 
 foods.get ("/", (req, res) => {
-    Food.find({}, (err, foundFood) => {
-        res.json(foundFood)
+    Food.find({}, (err, foundFoods) => {
+        res.json(foundFoods)
     })
 })
 
@@ -24,10 +24,10 @@ foods.put("/:id", (req, res) => {
       { new: true },
       (err, updatedFood) => {
         if (err) {
-          res.send(err)
+          console.log(err);
         } else {
-          Food.find({}, (err, foundFoods) => {
-            res.json(foundFoods)
+          Food.find({}, (err, foundFood) => {
+            res.json(foundFood)
           })
         }
       }

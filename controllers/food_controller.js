@@ -1,15 +1,15 @@
 const express = require("express")
-const food = express.Router()
+const foods = express.Router()
 
 const Food = require("../models/food.js")
 
-food.get ("/", (req, res) => {
+foods.get ("/", (req, res) => {
     Food.find({}, (err, foundFood) => {
         res.json(foundFood)
     })
 })
 
-food.post("/", (req, res) => {
+foods.post("/", (req, res) => {
     Food.create(req.body, (err, createFood) => {
         Food.find({}, (err, foundFoods) => {
             res.json(foundFoods)
@@ -17,7 +17,7 @@ food.post("/", (req, res) => {
     })
 })
 
-Foods.put("/:id", (req, res) => {
+foods.put("/:id", (req, res) => {
     Foods.findByIdAndUpdate(
       req.params.id,
       req.body,

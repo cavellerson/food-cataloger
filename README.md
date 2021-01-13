@@ -1,3 +1,3 @@
 # food-cataloger
 
-Andertti Duvenhage
+Andretti Duvenhage

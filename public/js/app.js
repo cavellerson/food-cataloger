@@ -57,6 +57,7 @@ class App extends React.Component {
     render = () => {
         return (
             <div>
+                <div className="create-box">
                 <h2>Create Food Post</h2>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name: </label>
@@ -71,10 +72,11 @@ class App extends React.Component {
                     <label htmlFor="foodDescription">Description: </label>
                     <input type="text" id="foodDescription" onChange={this.handleChange} value={this.state.foodDescription}/>
                     <br/>
-                    <input type="submit" value="Create food"/>
+                    <input type="submit" className="btn btn-outline-primary" value="Create food"/>
                 </form>
-                <h2>Edit Me</h2>
+                </div>
                 <ul>
+
                     {this.state.foods.map((food,index) => {
                         return (
                             <li key={index}>
@@ -86,7 +88,7 @@ class App extends React.Component {
                                 <br/>
                                 <img src={food.foodImage} alt={food.foodName}/>
                                 <br/>
-                                <button value={food._id} onClick={this.deleteFood}>Dislike</button>
+                                <button className="btn btn-outline-danger" value={food._id} onClick={this.deleteFood}>Dislike</button>
                                 <details>
                                   <summary>Edit this Food Post</summary>
                                   <form id={food._id} onSubmit={this.updateFood}>
@@ -115,7 +117,7 @@ class App extends React.Component {
                                       id="foodDescription"
                                       onChange={this.handleChange}/>
                                     <br />
-                                    <input type="submit" value="Update Food" />
+                                    <input className="btn btn-outline-warning" type="submit" value="Update Food" />
                                   </form>
                                   </details>
                             </li>

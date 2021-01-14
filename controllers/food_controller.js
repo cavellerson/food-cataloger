@@ -19,15 +19,12 @@ foods.post("/", (req, res) => {
 
 foods.put("/:id", (req, res) => {
     Food.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true },
-      (err, updatedFood) => {
+      req.params.id, req.body, { new: true },(err, updatedFood) => {
         if (err) {
           console.log(err);
         } else {
-          Food.find({}, (err, foundFood) => {
-            res.json(foundFood)
+          Food.find({}, (err, updatedFood) => {
+            res.json(updatedFood)
           })
         }
       }

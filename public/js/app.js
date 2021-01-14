@@ -63,10 +63,10 @@ class App extends React.Component {
                     <label htmlFor="image">Image: </label>
                     <input type="text" id="foodImage" onChange={this.handleChange} value={this.state.foodImage}/>
                     <br/>
-                    <label htmlFor="foodCountry">Species: </label>
+                    <label htmlFor="foodCountry">Country: </label>
                     <input type="text" id="foodCountry" onChange={this.handleChange} value={this.state.foodCountry}/>
                     <br/>
-                    <label htmlFor="foodDescription">Available for Adoption: </label>
+                    <label htmlFor="foodDescription">Description: </label>
                     <input type="text" id="foodDescription" onChange={this.handleChange} value={this.state.foodDescription}/>
                     <br/>
                     <input type="submit" value="Create food"/>

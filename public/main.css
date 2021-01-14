@@ -5,13 +5,12 @@ h1 {
 img {
     max-width: 50%;
     border: 1px white solid;
+    margin-bottom: 4%;
 }
 
 body {
     background-color: #cbcbcb;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -37,7 +36,7 @@ ul {
 }
 
 li {
-    width: 30vw;
+    width: 25vw;
     border: 1px red solid;
     margin: auto;
     padding: .5em;

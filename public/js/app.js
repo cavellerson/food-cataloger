@@ -90,9 +90,9 @@ class App extends React.Component {
                                 <br/>
                                 <button className="btn btn-outline-danger" value={food._id} onClick={this.deleteFood}>Dislike</button>
                                 <details> 
-                                  <summary>Edit this Food Post</summary>
+                                  <summary>Edit this Food Post</summary>  
                                   <form id={food._id} onSubmit={this.updateFood}>
-                                    <label htmlFor="foodName">Name</label>
+                                    <label htmlFor="foodName">Name</label>   
                                     <br/>
                                     <input type="text" id="foodName" onChange={this.handleChange} />
                                     <br/>

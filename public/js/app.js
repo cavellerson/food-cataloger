@@ -89,7 +89,7 @@ class App extends React.Component {
                                 <img src={food.foodImage} alt={food.foodName}/>
                                 <br/>
                                 <button className="btn btn-outline-danger" value={food._id} onClick={this.deleteFood}>Dislike</button>
-                                <details>
+                                <details> 
                                   <summary>Edit this Food Post</summary>
                                   <form id={food._id} onSubmit={this.updateFood}>
                                     <label htmlFor="foodName">Name</label>

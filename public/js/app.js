@@ -6,7 +6,7 @@ class App extends React.Component {
         foodDescription: "",
         foods: []
     }
-
+ // TESTING TO MAKE SURE THIS WORKS
     handleChange = (event) => {
         this.setState({
             [event.target.id]: event.target.value
@@ -30,13 +30,7 @@ class App extends React.Component {
         })
     }
 
-    componentDidMount = () => {
-        axios.get('/foods').then((response) => {
-            this.setState({
-                foods: response.data,
-            })
-        })
-    }
+
 
     updateFood = (event) => {
         event.preventDefault();
@@ -48,6 +42,14 @@ class App extends React.Component {
                 foodImage: "",
                 foodCountry: "",
                 foodDescription: ""})
+        })
+    }
+
+    componentDidMount = () => {
+        axios.get('/foods').then((response) => {
+            this.setState({
+                foods: response.data,
+            })
         })
     }
 

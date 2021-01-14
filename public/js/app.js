@@ -6,7 +6,7 @@ class App extends React.Component {
         foodDescription: "",
         foods: []
     }
-
+ // TESTING TO MAKE SURE THIS WORKS
     handleChange = (event) => {
         this.setState({
             [event.target.id]: event.target.value
